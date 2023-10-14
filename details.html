@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Details Page</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="styles.scss">
+    <style>
+        .container {
+            text-align: center;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        table td, th {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Details Page</h1>
+
+        <h2>User Information</h2>
+        <table>
+            <tr>
+                <th>Date of Birth</th>
+                <td>{dob}</td>
+            </tr>
+            <tr>
+                <th>Contact Number</th>
+                <td>{contact}</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>{age}</td>
+            </tr>
+        </table>
+
+        <p><a href="profile.php">Back to Profile</a></p>
+        <p><a href="logout.php">Log out</a></p>
+    </div>
+
+</body>
+</html>

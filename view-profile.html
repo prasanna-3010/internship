@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Profile</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>View Profile</h1>
+
+        <?php if (isset($userData)): ?>
+            
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <td><?php echo $userData["id"]; ?></td>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <td><?php echo $userData["name"]; ?></td>
+                </tr>
+                <tr>
+                    <th>Contact</th>
+                    <td><?php echo $userData["contact"]; ?></td>
+                </tr>
+                <tr>
+                    <th>Date of Birth</th>
+                    <td><?php echo $userData["dob"]; ?></td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td><?php echo $userData["age"]; ?></td>
+                </tr>
+            </table>
+            
+            <p><a href="profile.html">Back to Profile</a></p>
+            
+            <!-- Logout Button -->
+            <form action="logout.php" method="post">
+                <button type="submit">Logout</button>
+            </form>
+            
+        <?php else: ?>
+            <p>No user data found.</p>
+        <?php endif; ?>
+
+    </div>
+
+</body>
+</html>

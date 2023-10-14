@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="styles.scss"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/ajax-signup.js" defer></script>
+</head>
+<body>
+    
+    <div class="container"> 
+        <h1>Signup</h1>
+        
+        <form action="process-signup.php" method="post" id="signup-form" novalidate>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            
+            <div>
+                <label for="password_confirmation">Repeat password</label>
+                <input type="password" id="password_confirmation" name="password_confirmation">
+            </div>
+            
+            <button type="submit" id="signup-button">Sign up</button>
+
+            <h3><u>password requirements</u></h3>
+                 <b>
+                    <ul>
+                    <li>Password Should Contain Both Alphabets And Numbers</li>  
+                    <li>Minimum of 8 Characters Required In The Password</li>
+                    </ul>
+                </b>
+        </form>
+    </div>
+    
+</body>
+</html>
